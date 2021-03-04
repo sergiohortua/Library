@@ -1,0 +1,13 @@
+{
+  "name": "biblioteca-SPA",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "get":"node ./src/utils/getData"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
