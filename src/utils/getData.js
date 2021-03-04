@@ -1,10 +1,10 @@
 //const fetchData = require("./fetch");
 const API = "http://localhost:3020/books/";
 //let nameAutor
+// const fv = document.getElementById("first");
 const rta = document.getElementById("resp");
-const fv = document.getElementById("first");
 const lifv= document.getElementById("favo")
-const list= document.getElementById("listFv")
+const ullt= document.getElementById("ulFv")
 
 const getBook = async (nameAutor) => {
   try {
@@ -17,25 +17,26 @@ const getBook = async (nameAutor) => {
       const container = document.createElement("span"); // cree un elemento contenedor
       const p = document.createElement("p"); //el parrafo donde van mis datos
       const ckok = document.createElement("input"); // el elemento de checkbox
-      ckok.setAttribute("type", "checkbox");
-      // ckok.setAttribute("onclick", "ckl()");
-      // ckok.onclick( function () {
-
-      // }
-
-      // )// Esta bien sentenciada?????
+      ckok.setAttribute("type", "radio");
       ckok.setAttribute("id", "ck");
       p.textContent = `${books[0].id} ${books[0].autor} ${books[0].gender} `; // en p guard"o la informacion que traigo del .json
       container.appendChild(p); // en container agrego el elemento p
       container.appendChild(ckok); // en container agrego el elemento input tipo checkbox
       rta.appendChild(container); // rta agrega lo de container
 
-      console.log(ckok);
-      
-      document.getElementById("ck").addEventListener("click", myFunction);
+      //p contiene la info
 
+      document.getElementById("ck").addEventListener("click", myFunction);
+      const nodeList= document.createElement('li')
       function myFunction() {
-        fv.appendChild(p)
+        if (ckok.checked== true) {
+          
+          nodeList.appendChild(p)
+          ullt.appendChild(nodeList)
+          container.removeChild(ckok)
+          
+        }
+        
       }
     }
   } catch (error) {
