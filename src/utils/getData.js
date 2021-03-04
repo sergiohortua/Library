@@ -44,6 +44,46 @@ const getBook = async (nameAutor) => {
   }
 };
 
+
+const getBookCk = async (value) => {
+  try {
+    const response = await fetch(`${API}?gender=${value}`);
+    const books = await response.json();
+    
+    if (books.length >= 1) {
+      const container = document.createElement("span"); // cree un elemento contenedor
+      const p = document.createElement("p"); //el parrafo donde van mis datos
+      const ckok = document.createElement("input"); // el elemento de checkbox
+      ckok.setAttribute("type", "checkbox");
+      ckok.setAttribute("id", "ck");
+      p.textContent = `${books[0].id} ${books[0].autor} ${books[0].gender} `; // en p guard"o la informacion que traigo del .json
+      container.appendChild(p); // en container agrego el elemento p
+      container.appendChild(ckok); // en container agrego el elemento input tipo checkbox
+      rta.appendChild(container); // rta agrega lo de container
+
+      document.getElementById("ck").addEventListener("click", myFunction);
+      const nodeList= document.createElement('li')
+      function myFunction() {
+        if (ckok.checked== true) {
+          console.log(ckok);
+          nodeList.appendChild(p)
+          ullt.appendChild(nodeList)
+          container.removeChild(ckok)
+          ckok.checked==false
+        }
+        
+      }
+    }
+  } catch (error) {
+    console.error(error);
+  }
+};
+
+
+
+
+
+
 //export default getBook
 
 /*      console.log(`ID            ${books[0].id}`);
