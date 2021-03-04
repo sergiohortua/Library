@@ -75,10 +75,10 @@ section{
     
     background:rgb(102, 101, 170);
     height: 40rem;
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 1rem 1rem;
+    gap: 1rem 1rem; */
     
 }
 .listFav__container div{
