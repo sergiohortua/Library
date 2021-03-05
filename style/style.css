@@ -240,7 +240,7 @@ footer {
     filter: invert(29%) sepia(100%) saturate(1286%) hue-rotate(190deg)
       brightness(86%) contrast(95%);
   }
-  
+
   @media screen and (max-width: 425px){
     header{
       height: 9rem;
@@ -300,5 +300,31 @@ footer {
     #ulFv li{
       font-size: 0.8rem;
       height: 5.5rem;
+    }
+    footer{
+      height: 5rem;
+    }
+    footer div h1{
+      font-size: 1.5rem;
+      margin: 0 0 0.2rem 0;
+    }
+    .redesF {
+      margin: 0.5rem 0 0 0 ;
+    }
+
+    .redesF a img {
+      width: 1.5rem;
+      height: 1.5rem;
+  }
+  }
+  @media screen and (max-width: 375px){
+    .redes h3{
+      padding-right: 1rem;
+    }
+    .redes a{
+      margin: 0 0.4rem 0 0.4rem;
+    }
+    .form-group label{
+      margin-top: 0;
     }
   }
