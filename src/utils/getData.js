@@ -3,7 +3,7 @@ const API = "http://localhost:3020/books/";
 //let nameAutor
 // const fv = document.getElementById("first");
 const rta = document.getElementById("resp");
-const lifv= document.getElementById("favo")
+// const lifv= document.getElementById("favo")
 const ullt= document.getElementById("ulFv")
 
 const getBook = async (nameAutor) => {
@@ -11,17 +11,20 @@ const getBook = async (nameAutor) => {
     //const data = await fetchData(url_api);
     const response = await fetch(`${API}?autor=${nameAutor}`);
     const books = await response.json();
-    //console.log(books.length);
-    //console.log(books.length>=1);
+   
     if (books.length >= 1) {
-      const container = document.createElement("span"); // cree un elemento contenedor
+      const container = document.createElement("div"); // cree un elemento contenedor
+      
       const p = document.createElement("p"); //el parrafo donde van mis datos
       const ckok = document.createElement("input"); // el elemento de checkbox
-      ckok.setAttribute("type", "radio");
+      ckok.setAttribute("type", "checkbox");
       ckok.setAttribute("id", "ck");
-      p.textContent = `${books[0].id} ${books[0].autor} ${books[0].gender} `; // en p guard"o la informacion que traigo del .json
-      container.appendChild(p); // en container agrego el elemento p
+      p.textContent = `Nombre: ${books[0].name_book} 
+      Autor: ${books[0].autor}       
+      Genero: ${books[0].gender}
+      Codigo ISBN: ${books[0].ISBN}`; // en p guard"o la informacion que traigo del .json
       container.appendChild(ckok); // en container agrego el elemento input tipo checkbox
+      container.appendChild(p); // en container agrego el elemento p
       rta.appendChild(container); // rta agrega lo de container
 
       //p contiene la info
@@ -51,15 +54,18 @@ const getBookCk = async (value) => {
     const books = await response.json();
     
     if (books.length >= 1) {
-      const container = document.createElement("span"); // cree un elemento contenedor
+      const container = document.createElement("div"); 
       const p = document.createElement("p"); //el parrafo donde van mis datos
       const ckok = document.createElement("input"); // el elemento de checkbox
       ckok.setAttribute("type", "checkbox");
       ckok.setAttribute("id", "ck");
-      p.textContent = `${books[0].id} ${books[0].autor} ${books[0].gender} `; // en p guard"o la informacion que traigo del .json
-      container.appendChild(p); // en container agrego el elemento p
+      p.textContent = `Nombre: ${books[0].name_book}
+      Autor: ${books[0].autor}       
+      Genero: ${books[0].gender}
+      Codigo ISBN: ${books[0].ISBN}`; // en p guard"o la informacion que traigo del .json
       container.appendChild(ckok); // en container agrego el elemento input tipo checkbox
-      rta.appendChild(container); // rta agrega lo de container
+      container.appendChild(p); // en container agrego el elemento p
+      rta.append(container); // rta agrega lo de container
 
       document.getElementById("ck").addEventListener("click", myFunction);
       const nodeList= document.createElement('li')
@@ -98,7 +104,7 @@ const getBookCk = async (value) => {
          console.log('no visto');
       }
      
-       /* const fvCont=document.createElement('span')
+       /* const fvCont=document.createElement('li')
       const fvDesc = document.createElement('p');
       fvDesc.textContent=`${books[0].id} ${books[0].autor} ${books[0].gender} `
       fvCont.appendChild(fvDesc); 

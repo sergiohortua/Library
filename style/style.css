@@ -1,106 +1,243 @@
-
-*{
-    box-sizing: border-box;
-    font-family: 'Ubuntu', sans-serif;
+* {
+    font-family: "Ubuntu", sans-serif;
 }
-html{
+html {
     font-size: 10px;
 }
-body{
+body {
     margin: 0;
-}
-header{
+    padding: 0;
+    background: rgb(247, 245, 245);
+    /* background: -webkit-linear-gradient(0deg, #1c3643 0, #273b47 25%, #1e5372); */
+    
     width: 100%;
-    height: 12rem;
-    background: rgb(55, 230, 200);
-    display: flex;
-    justify-content: space-around;
+    height: auto;
+    box-sizing: border-box;
+  
+}
+header {
+  max-width: 100%;
+  height: 15rem;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 18px -2px #000000;
 }
 .title,
 .logo,
-.search{
-    margin: 0;
-    padding: 0;
-    width: 25%;
-    height: auto;
-    background: papayawhip;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.search {
+  width: 25%;
+  height: auto;
+  /* background: papayawhip; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.logo img{
-    background-size: cover;
-    height:90%;
-    width: auto;
+
+.Home-title {
+  text-decoration: none;
+  list-style: none;
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  font-weight: 900;
+  /* color: #ffffff; */
+  /* text-shadow: 0 -1px 4px #fff, 0 -2px 10px #ff0, 0 -10px 20px #ff8000,
+    0 -18px 40px #f00; */
 }
-.form-group{
-    width: 60%;
-    background: chocolate;
-    display: flex;
-    flex-wrap: wrap;
+.logo img {
+  background-size: cover;
+  height: 90%;
+  width: 100%;
+  width: auto;
 }
-main{
-    background: fuchsia;
+.search {
+  height: 13rem;
+  /* background: rgb(230, 183, 107); */
+  flex-direction: column;
+  align-self: flex-start;
 }
-section{
-    display: grid;
-    grid-template-columns: 0.5fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    background: cyan;
-    min-height: 41rem;
+.redes {
+  /* background: red; */
+  width: 100%;
+  height: auto;
+  margin: 1rem 0 auto 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
-.filter{
-    background: darkcyan;
-    margin: 1rem;
+.redes a {
+  margin: 0 1rem 0 1rem;
+}
+.redes a img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.redesGit {
+  filter: invert(13%) sepia(7%) saturate(1230%) hue-rotate(169deg)
+    brightness(96%) contrast(91%);
+}
+.redesTw {
+  filter: invert(49%) sepia(70%) saturate(718%) hue-rotate(166deg)
+    brightness(95%) contrast(100%);
+}
+.redesLn {
+  filter: invert(29%) sepia(100%) saturate(1286%) hue-rotate(190deg)
+    brightness(86%) contrast(95%);
+}
+
+.form-group {
+  width: 100%;
+  height: 7rem;
+  /* background: chocolate; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.form-group label {
+  font-size: 1.5rem;
+  margin: 0.5rem 0.5rem 0.5rem 0;
+}
+.form-group input {
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 2rem;
+  padding-left: 1rem;
+  border: 0.1rem gray solid;
+  background: rgb(218, 216, 216);
+  outline: none;
+}
+main {
+  /* background: rgb(0, 153, 255); */
+  margin: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 18px -2px #000000;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 30% 35% 35%;
+  grid-template-rows: 1fr;
+}
+.filter {
+  /* background: rgb(231, 0, 243); */
+  margin: 1rem;
 }
 .filter h2,
 .listFav h2,
-.resul h2{
-    background: rgb(252, 0, 0);
-    text-align: center;
-    margin: 0;
-    width: auto;
-    max-height: 10%;
+.resul h2 {
+  font-size: 2rem;
+  /* background: rgb(252, 0, 0); */
+  text-align: center;
+  /* margin: 1rem auto ; */
+  padding: auto 0;
+  width: auto;
+  height: 6%;
+  border: 0.1rem solid rgb(211, 211, 211); 
+  border-radius: 1rem;
 }
-.listFav{
-    grid-column: 2/3;
-    grid-row: 1/2;
-    background:rgb(43, 42, 128);
-    margin: 1rem;
-    max-width: 100%;
-    max-height: 100%;
+.filter-container {
+  /* background: gold; */
+  width: auto;
+  height: auto;
+  margin: 0 1rem 0 1rem;
+}
+.filter-container div {
+  width: auto;
+  height: 2.5rem;
+  /* background: gray; */
+  margin: 0.2rem auto 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.filter-container div input {
+    outline: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+.filter-container div label{
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
-.listFav__container{
+
+.listFav {
+  /* background: rgb(0, 82, 233); */
+  margin: 1rem; 
+}
+
+.listFav__container {
+  /* background: rgb(221, 8, 8); */
+  height: 40rem;
+  padding: 0.5rem 0 1rem 0;
+  overflow: scroll;
+}
+#ulFv{
+    /* background: rgb(50, 205, 171); */
+    padding: 0 0 0 1rem;
+}
+#ulFv li{
+    background: rgb(230, 221, 230);
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    height: 8rem;
+    margin: 1rem  ;
+    width: 90%;
     
-    background:rgb(102, 101, 170);
-    height: 40rem;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 1rem 1rem; */
-    
 }
-.listFav__container div{
-    background: pink;
+.resul {
+  margin: 1rem;
+  /* background: papayawhip; */
 }
-/* .listFav__contenido{
-    height: auto;
+
+#resp div{
+    background: rgb(230, 221, 230);
+    border-radius: 1rem;
+    font-size: 1.5rem;
+
+    display: flex;
+    align-items: center;
 }
-.listFav__contenido img{
-    height: 50%;
-    width: 50%;
-} */
-.resul{
-    background: hotpink;
-    margin: 1rem;
+#ck{
+    margin-right: 1rem;
 }
-footer{
+
+footer {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+}
+.redesF {
+    /* background: red; */
     width: 100%;
-    height: 10rem;
-    background: coral;
-}
-footer h4{
-    margin: 0;
-}
-
+    height: auto;
+    margin: 1rem 0 auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .redesF a {
+    margin: 0 1rem 0 1rem;
+  }
+  .redesF a img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .redesGit {
+    filter: invert(13%) sepia(7%) saturate(1230%) hue-rotate(169deg)
+      brightness(96%) contrast(91%);
+  }
+  .redesTw {
+    filter: invert(49%) sepia(70%) saturate(718%) hue-rotate(166deg)
+      brightness(95%) contrast(100%);
+  }
+  .redesLn {
+    filter: invert(29%) sepia(100%) saturate(1286%) hue-rotate(190deg)
+      brightness(86%) contrast(95%);
+  }
+  

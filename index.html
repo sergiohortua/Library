@@ -9,17 +9,18 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style/style.css" />
- 
+
     <title>Biblioteca-SPA</title>
   </head>
   <body>
     <header>
       <div class="title">
-        <article class="Home-title">
-            <a href="https://sergiohortua.github.io/Library.github.io/">
-                  <h1>Biblioteca Virtual-SPA</h1>
-                </a>
-            </article>
+        <a
+          class="Home-title"
+          href="https://sergiohortua.github.io/Library.github.io/"
+        >
+          <h1>Biblioteca Virtual</h1>
+        </a>
       </div>
       <div class="logo">
         <img
@@ -28,61 +29,142 @@
         />
       </div>
       <div class="search">
-          <div class="form-group">
-            <label for="exampleInputEmail1">Busqueda por nombre</label>
-            <input type="search" placeholder="Ingresa Nombre" id="search" />
-          </div>
+        <div class="redes">
+          <h3>Follow me:</h3>
+          <a
+            class="redesGit"
+            href="https://github.com/sergiohortua"
+            target="_blank"
+          >
+            <img src="./src/images/github.png" alt="" />
+          </a>
+          <a
+            class="redesLn"
+            href="https://linkedin.com/in/sergio-hortua-096b4769"
+            target="_blank"
+            ><img src="./src/images/linkedin.png" alt=""
+          /></a>
+          <a class="redesTw" href="https://twitter.com/sandresh" target="_blank"
+            ><img src="./src/images/twitter.png" alt=""
+          /></a>
+          <a
+            class="redesPl"
+            href="https://platzi.com/p/SergioHortua/"
+            target="_blank"
+            ><img src="./src/images/platziLo.png" alt=""
+          /></a>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Busqueda por nombre</label>
+          <input type="search" placeholder="Ingresa Nombre" id="search" />
+        </div>
       </div>
     </header>
     <main>
       <section>
         <div class="filter">
           <h2>Generos</h2>
-          <input type="checkbox" id="crimen" value="Mystery|Thriller"/>
-          <label> Crimen</label><br /><!--Crime-->
-          <input type="checkbox" />
-          <label> Drama</label><br />
-          <input type="checkbox" />
-          <label> Romance</label><br />
-          <input type="checkbox" />
-          <label> Misterio</label><br /> <!--Mystery-->
-          <input type="checkbox" />
-          <label> Thriller</label><br /> <!--Thriller-->
-          <input type="checkbox" />
-          <label> Accion</label><br /> <!--Action-->
-          <input type="checkbox" />
-          <label> Guerra</label><br /> <!--War-->
-          <h2>literarios</h2>
-          <input type="checkbox" />
-          <label> Horror</label><br /> <!--Horror-->
-          <input type="checkbox" />
-          <label> Documental</label><br /> <!--Documentary-->
-          <input type="checkbox" />
-          <label> Musical</label><br /> <!--Musical-->
-          <input type="checkbox" />
-          <label> Aventura</label><br /> <!--Adventure-->
+          <div class="filter-container">
+            <div>
+              <input type="checkbox" id="crimen" value="Mystery|Thriller" />
+              <label> Crimen</label><br /><!--Crime-->
+            </div>
+            <div>
+              <input type="checkbox" />
+              <label> Drama</label><br />
+            </div>
+            <div>
+              <input type="checkbox" />
+              <label> Romance</label><br />
+            </div>
+            <div>
+              <input type="checkbox" />
+              <label> Misterio</label><br />
+              <!--Mystery-->
+            </div>
+            <div>
+              <input type="checkbox" />
+              <label> Thriller</label><br />
+              <!--Thriller-->
+            </div>
+            <div>
+              <input type="checkbox" />
+              <label> Accion</label><br />
+              <!--Action-->
+            </div>
+            <div>
+              <input type="checkbox" />
+              <label> Guerra</label><br />
+              <!--War-->
+            </div>
+            <div>
+              <input type="checkbox" />
+              <label> Horror</label><br />
+              <!--Horror-->
+            </div>
+            <div>
+              <input type="checkbox" />
+              <label> Documental</label><br />
+              <!--Documentary-->
+            </div>
+            <div>
+              <input type="checkbox" />
+              <label> Musical</label><br />
+              <!--Musical-->
+            </div>
+            <div>
+              <input type="checkbox" />
+              <label> Aventura</label><br />
+              <!--Adventure-->
+            </div>
+          </div>
         </div>
         <div class="listFav">
           <h2>Favoritos</h2>
           <div class="listFav__container" id="favo">
-           <ul id="ulFv"></ul>
-          </div>                 
+            <ul id="ulFv"></ul>
+          </div>
         </div>
         <div class="resul">
           <h2>Resultado</h2>
-          <div id="resp"> </div>
+          <div id="resp">
+          </div>
         </div>
       </section>
     </main>
     <footer>
-      
+      <div>
+        <h1>Hecho con 💚 Sergio Hortua</h1>
+        <div class="redesF">
+          <a
+            class="redesGit"
+            href="https://github.com/sergiohortua"
+            target="_blank"
+          >
+            <img src="./src/images/github.png" alt="" />
+          </a>
+          <a
+            class="redesLn"
+            href="https://linkedin.com/in/sergio-hortua-096b4769"
+            target="_blank"
+            ><img src="./src/images/linkedin.png" alt=""
+          /></a>
+          <a class="redesTw" href="https://twitter.com/sandresh" target="_blank"
+            ><img src="./src/images/twitter.png" alt=""
+          /></a>
+          <a
+            class="redesPl"
+            href="https://platzi.com/p/SergioHortua/"
+            target="_blank"
+            ><img src="./src/images/platziLo.png" alt=""
+          /></a>
+        </div>
+      </div>
+     
     </footer>
-   <script src="./src/utils/getData.js"></script>
+    <script src="./src/utils/getData.js"></script>
     <script src="./src/index.js"></script>
   </body>
 </html>
-
-
-
 
 <!-- <script type="text/javascript" src="main.js"></script> -->
