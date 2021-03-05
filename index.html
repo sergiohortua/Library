@@ -19,7 +19,7 @@
           class="Home-title"
           href="https://sergiohortua.github.io/Library.github.io/"
         >
-          <h1>Biblioteca Virtual</h1>
+          Biblioteca Virtual
         </a>
       </div>
       <div class="logo">
@@ -31,28 +31,33 @@
       <div class="search">
         <div class="redes">
           <h3>Follow me:</h3>
-          <a
-            class="redesGit"
-            href="https://github.com/sergiohortua"
-            target="_blank"
-          >
-            <img src="./src/images/github.png" alt="" />
-          </a>
-          <a
-            class="redesLn"
-            href="https://linkedin.com/in/sergio-hortua-096b4769"
-            target="_blank"
-            ><img src="./src/images/linkedin.png" alt=""
-          /></a>
-          <a class="redesTw" href="https://twitter.com/sandresh" target="_blank"
-            ><img src="./src/images/twitter.png" alt=""
-          /></a>
-          <a
-            class="redesPl"
-            href="https://platzi.com/p/SergioHortua/"
-            target="_blank"
-            ><img src="./src/images/platziLo.png" alt=""
-          /></a>
+          <div>
+            <a
+              class="redesGit"
+              href="https://github.com/sergiohortua"
+              target="_blank"
+            >
+              <img src="./src/images/github.png" alt="logoGitHub" />
+            </a>
+            <a
+              class="redesLn"
+              href="https://linkedin.com/in/sergio-hortua-096b4769"
+              target="_blank"
+              ><img src="./src/images/linkedin.png" alt=""
+            /></a>
+            <a
+              class="redesTw"
+              href="https://twitter.com/sandresh"
+              target="_blank"
+              ><img src="./src/images/twitter.png" alt=""
+            /></a>
+            <a
+              class="redesPl"
+              href="https://platzi.com/p/SergioHortua/"
+              target="_blank"
+              ><img src="./src/images/platziLo.png" alt=""
+            /></a>
+          </div>
         </div>
         <div class="form-group">
           <label for="exampleInputEmail1">Busqueda por nombre</label>
@@ -70,30 +75,34 @@
               <label> Crimen</label><br /><!--Crime-->
             </div>
             <div>
-              <input type="checkbox" id="drama" value="Drama"/>
+              <input type="checkbox" id="drama" value="Drama" />
               <label> Drama</label><br />
             </div>
             <div>
-              <input type="checkbox"  id="romanc"value="Comedy|Romance">
+              <input type="checkbox" id="romanc" value="Comedy|Romance" />
               <label> Romance</label><br />
             </div>
             <div>
-              <input type="checkbox" id="mistery" value="Crime|Mystery|Thriller"/>
+              <input
+                type="checkbox"
+                id="mistery"
+                value="Crime|Mystery|Thriller"
+              />
               <label> Misterio</label><br />
               <!--Mystery-->
             </div>
             <div>
-              <input type="checkbox" id="thriller"value="Horror|Thriller"/>
+              <input type="checkbox" id="thriller" value="Horror|Thriller" />
               <label> Thriller</label><br />
               <!--Thriller-->
             </div>
             <div>
-              <input type="checkbox" id="action" value="Action|Thriller"/>
+              <input type="checkbox" id="action" value="Action|Thriller" />
               <label> Accion</label><br />
               <!--Action-->
             </div>
             <div>
-              <input type="checkbox" id="guerra" value="Drama|War"/>
+              <input type="checkbox" id="guerra" value="Drama|War" />
               <label> Guerra</label><br />
               <!--War-->
             </div>
@@ -103,12 +112,12 @@
               <!--Horror-->
             </div>
             <div>
-              <input type="checkbox" id="docum" value="Documentary"/>
+              <input type="checkbox" id="docum" value="Documentary" />
               <label> Documental</label><br />
               <!--Documentary-->
             </div>
             <div>
-              <input type="checkbox" id="music" value="Musical"/>
+              <input type="checkbox" id="music" value="Musical" />
               <label> Musical</label><br />
               <!--Musical-->
             </div>
@@ -127,8 +136,7 @@
         </div>
         <div class="resul">
           <h2>Resultado</h2>
-          <div id="resp">
-          </div>
+          <div id="resp"></div>
         </div>
       </section>
     </main>
@@ -160,7 +168,6 @@
           /></a>
         </div>
       </div>
-     
     </footer>
     <script src="./src/utils/getData.js"></script>
     <script src="./src/index.js"></script>
