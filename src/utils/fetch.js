@@ -14,5 +14,3 @@ const fetchData = (url_api) => {
     xhttp.send();
   });
 };
-
-//module.exports = fetchData;
